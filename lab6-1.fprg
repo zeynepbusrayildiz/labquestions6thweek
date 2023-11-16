@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-16 10:12:52 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTA4OzEwOjQ3OjQyIMOWUzsyMzgw"/>
+        <attribute name="edited" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTE2OzEwOjEyOjUyIMOWUzsxMDsyNTI4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, l, c, a, b" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="22"/>
+            <assign variable="l" expression="2"/>
+            <assign variable="c" expression="0"/>
+            <while expression="i&lt;100">
+                <assign variable="l" expression="2"/>
+                <assign variable="a" expression="i%10"/>
+                <assign variable="b" expression="i/10"/>
+                <if expression="a==1||a==0||b==1||b==0">
+                    <then/>
+                    <else>
+                        <while expression="l&lt;a">
+                            <if expression="a%l!=0">
+                                <then/>
+                                <else>
+                                    <assign variable="c" expression="c+1"/>
+                                </else>
+                            </if>
+                            <assign variable="l" expression="l+1"/>
+                        </while>
+                        <if expression="c==0">
+                            <then>
+                                <assign variable="l" expression="2"/>
+                                <while expression="l&lt;b">
+                                    <if expression="b%l!=0">
+                                        <then/>
+                                        <else>
+                                            <assign variable="c" expression="c+1"/>
+                                        </else>
+                                    </if>
+                                    <assign variable="l" expression="l+1"/>
+                                </while>
+                                <if expression="c==0">
+                                    <then>
+                                        <output expression="i" newline="True"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="i" expression="i+1"/>
+                <assign variable="c" expression="0"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-16 10:39:56 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTE2OzEwOjM2OjA5IMOWUzsyMzgw"/>
+        <attribute name="edited" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTE2OzEwOjM5OjU2IMOWUzs1OzI0OTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, a, b, c" type="Integer" array="False" size=""/>
+            <declare name="avg" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter a number:&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="a" expression="n/100"/>
+            <assign variable="n" expression="n%100"/>
+            <assign variable="b" expression="n/10"/>
+            <assign variable="c" expression="n%10"/>
+            <assign variable="avg" expression="(a+b+c)/3"/>
+            <output expression="avg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

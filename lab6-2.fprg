@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-16 10:25:20 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTE2OzEwOjEzOjAwIMOWUzsyMzY2"/>
+        <attribute name="edited" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTE2OzEwOjI1OjIwIMOWUzsyOzI0ODA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="f, digit, num, cnt" type="Integer" array="False" size=""/>
+            <assign variable="num" expression="1"/>
+            <assign variable="f" expression="1"/>
+            <assign variable="digit" expression="0"/>
+            <while expression="digit&lt;10">
+                <assign variable="digit" expression="0"/>
+                <assign variable="f" expression="1"/>
+                <assign variable="cnt" expression="1"/>
+                <while expression="cnt&lt;=num">
+                    <assign variable="f" expression="f*cnt"/>
+                    <assign variable="cnt" expression="cnt+1"/>
+                </while>
+                <assign variable="cnt" expression="f"/>
+                <while expression="cnt!=0">
+                    <assign variable="cnt" expression="cnt/10"/>
+                    <assign variable="digit" expression="digit+1"/>
+                </while>
+                <assign variable="num" expression="num+1"/>
+            </while>
+            <output expression="num-1" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
